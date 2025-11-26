@@ -19,3 +19,18 @@ double kelvin_to_celsius(double kelvin)
 {
     return kelvin - 273.15;
 }
+
+string water_state(double celsius)
+{
+    if (celsius <= 0) 
+    {
+        return "Ice";
+    }
+
+    if (celsius > 100)
+    {
+        return "Steam";
+    }
+
+    return "Water";
+}
