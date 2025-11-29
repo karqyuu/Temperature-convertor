@@ -34,5 +34,13 @@ int main()
     runTest("3. F to C (32 -> 0)", isClose(fahrenheit_to_celsius(32), 0.0));
     runTest("4. F to C (212 -> 100)", isClose(fahrenheit_to_celsius(212), 100.0));
 
+    //C <-> K
+    runTest("5. C to K (0 -> 273.15)", isClose(celsius_to_kelvin(0), 273.15));
+    runTest("6. C to K (-273.15 -> 0)", isClose(celsius_to_kelvin(-273.15), 0.0));
+    runTest("7. K to C (0 -> -273.15)", isClose(kelvin_to_celsius(0), -273.15));
+    runTest("8. K to C (373.15 -> 100)", isClose(kelvin_to_celsius(373.15), 100.0));
+
+    
+
 
 }
