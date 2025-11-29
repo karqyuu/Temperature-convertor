@@ -47,5 +47,9 @@ int main()
     runTest("12. Water (99 is Water)", water_state(99) == "Water");
     runTest("13. Water (100 is Steam)", water_state(100) == "Steam");
 
+    //edge cases
+    runTest("14. F to C (-40 == -40)", isClose(fahrenheit_to_celsius(-40), -40.0));
+    runTest("15. Water (150 is Steam)", water_state(150) == "Steam");
 
+    return 0;
 }
