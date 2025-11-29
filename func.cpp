@@ -27,7 +27,7 @@ string water_state(double celsius)
         return "Ice";
     }
 
-    if (celsius > 100)
+    if (celsius >= 100)
     {
         return "Steam";
     }
