@@ -40,7 +40,12 @@ int main()
     runTest("7. K to C (0 -> -273.15)", isClose(kelvin_to_celsius(0), -273.15));
     runTest("8. K to C (373.15 -> 100)", isClose(kelvin_to_celsius(373.15), 100.0));
 
-    
+    //water state test
+    runTest("9. Water (-10 is Ice)", water_state(-10) == "Ice");
+    runTest("10. Water (0 is Ice)", water_state(0) == "Ice");
+    runTest("11. Water (25 is Water)", water_state(25) == "Water");
+    runTest("12. Water (99 is Water)", water_state(99) == "Water");
+    runTest("13. Water (100 is Steam)", water_state(100) == "Steam");
 
 
 }
