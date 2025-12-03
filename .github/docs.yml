@@ -6,6 +6,7 @@ on:
       - main
       - master
       - feature/implementation
+      - feature/docs-ci
   workflow_dispatch:
 
 permissions:
